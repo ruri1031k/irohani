@@ -95,25 +95,18 @@ body {
 }
 .main-logo-size{
     margin-top: 30px;
+    margin-bottom: 40px;
     width:30%;
 }
 /*JOIN-LOGIN*/
 .top-button-layout{
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
-.top-button-layor{
-    align-items: flex-start;
-}
-.top-button-join{
-    margin-left: 10px;
-    margin-right: 10px;
-    width:150px;
-}
-.top-button-login{
+.top-button{
+    width:30%;
     margin-left: 20px;
     margin-right: 20px;
-    width:160px;
 }
 
 .top-button-join a:hover{
