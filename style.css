@@ -66,12 +66,12 @@ li{
     position: relative;
 }
 .main-vis{
-    
     width:100%;
 }
 
 body {
     background-image:url(images/back.png);
+    /* background-color: #ffffff; */
     background-repeat: no-repeat;
     background-position:0 480px;
     background-attachment: fixed;
@@ -107,6 +107,7 @@ body {
     width:30%;
     margin-left: 20px;
     margin-right: 20px;
+    margin-bottom: 60px;
 }
 
 .top-button-join a:hover{
@@ -116,8 +117,7 @@ body {
 
 /*WHATいろはに*/
 .pink-layor1{
-    position: absolute;
-    top:900px;
+    position:relative;
 }
 .pink-layor-moji{
     font-family: "Zen";
@@ -127,9 +127,9 @@ body {
 }
 .what-irohani-pic{
     position: absolute;
-    top:930px;
-    display: flex;
-    justify-content: flex-start;
+    top:35px;
+    /* display: flex;
+    justify-content: flex-start; */
     width:100%;
 }
 .pink-white-moji-layout{
