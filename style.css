@@ -68,7 +68,7 @@ li{
 
 body {
     background-color: #603813;
-    background-image:url("images/irohani-back.png");
+    background-image:url(images/irohani-back.png);
     background-repeat: no-repeat;
     background-position:0 500px;
     background-size: cover;
