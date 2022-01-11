@@ -43,9 +43,9 @@ li{
 }
 
 /*トップページ*/
-.smaple-box01{
+/* .smaple-box01{
     position: relative;
-}
+} */
 
 /* .menu-layor{
     position: absolute;
@@ -62,20 +62,28 @@ li{
 } */
 
 /*メインビジュアル*/
+.gizakasa{
+    position: relative;
+}
 .main-vis{
+    
     width:100%;
 }
 
 body {
-    background-color: #603813;
-    background-image:url(images/irohani-back.png);
+    background-image:url(images/back.png);
     background-repeat: no-repeat;
-    background-position:0 500px;
+    background-position:0 480px;
+    background-attachment: fixed;
     background-size: cover;
   }
 
-
-
+/*ギザギザ*/
+.giza{
+    width: 100%;
+    position: absolute;
+    bottom: -10px;
+}
 
 /*背景*/
 .background{
@@ -83,11 +91,10 @@ body {
 }
 /*メインロゴ*/
 .main-logo-layor{
-    position: absolute;
-    top:530px;
     text-align: center;
 }
 .main-logo-size{
+    margin-top: 30px;
     width:30%;
 }
 /*JOIN-LOGIN*/
@@ -96,8 +103,6 @@ body {
     justify-content: center;
 }
 .top-button-layor{
-    position: absolute;
-    top:750px;
     align-items: flex-start;
 }
 .top-button-join{
