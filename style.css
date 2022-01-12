@@ -176,7 +176,7 @@ body {
     position: absolute;
     top:50px;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     width:100%;
 }
 .pink-white-moji-layout{
@@ -232,13 +232,13 @@ body {
 .yellow-back-moji{
     font-family: "Zen";
     color:#603813;
-    padding-top: 28px;
-    font-size: 4vw;
-    padding-bottom: 20px;
+    padding-top: 10%;
+    font-size: 6vw;
+    padding-bottom: 7%;
     text-align: center;
 }
 .select-size{
-    width: 70%;
+    width: 80%;
 }
 
 /*topics*/
