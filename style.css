@@ -133,7 +133,7 @@ body {
     cursor: pointer;
 	position: absolute;
     /* display:inline-block; */
-	top: 44%;
+	top: 46%;
 	left: 50%;
     transform: translate(-50%, -50%);
 }    
@@ -147,7 +147,7 @@ body {
     cursor: pointer;
 	position: absolute;
     /* display:inline-block; */
-	top: 44%;
+	top: 46%;
 	left: 50%;
     transform: translate(-50%, -50%);
 }    
@@ -189,14 +189,14 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1%;
+    font-size: 0.1px;
     font-family: "Zen";
 }
 .pink-white-moji2-1{
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1%;
+    font-size: 0.1px;
     font-family: "Zen";
     padding-top: 30px;
 }
@@ -204,7 +204,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1%;
+    font-size: 0.1px;
     font-family: "Zen";
     padding-bottom: 15px;
 }
@@ -213,7 +213,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1%;
+    font-size: 0.1px;
     font-family: "Zen";
     padding-bottom: 20px;
 }
