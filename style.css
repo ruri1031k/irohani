@@ -103,23 +103,64 @@ body {
     text-align: center;
     align-items: center;
 }
-.top-button{
+.top-button-login{
     width:30%;
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+    display: block;
 }
 
-.top-button-join a:hover{
-    src: url(../irohaniD6/images/join-pink.png);
-    width: 160px;
+.top-button-join{
+    width:30%;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
+    overflow: hidden;
 }
+
+.butoon{
+    display: flex;
+    justify-content: center;
+}
+.top-button-join img:nth-child(2) {
+    cursor: pointer;
+	position: absolute;
+	top: 44%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}    
+
+.top-button-join:hover img:nth-child(2) {
+	opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.top-button-login img:nth-child(2) {
+    cursor: pointer;
+	position: absolute;
+	top: 44%;
+	left: 50%;
+    transform: translate(-50%, -50%);
+}    
+
+.top-button-login:hover img:nth-child(2) {
+	opacity: 0;
+    transition: opacity 0.1s;
+}
+
 
 /*WHATISいろはに*/
 .pink-layor1{
     position:relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
 }
 .pink-layor-moji{
     font-family: "Zen";
@@ -168,9 +209,9 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 2vw;
+    font-size: 1vw;
     font-family: "Zen";
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 
@@ -180,15 +221,14 @@ body {
     justify-content: center;
 }
 .yellow-back{
-    position: absolute;
-    top:260%;
+    position: relative;
     background-color:rgba(233,202,165,0.6);
     width:90%;
     height:52%;
 }
-.yellow-back01{
-    position: absolute;
-    top:260%;
+.yellow-back-search{
+    position: relative;
+    padding-top: 30px;
     width:90%;
 }
 .yellow-back-moji{
