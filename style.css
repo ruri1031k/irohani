@@ -161,8 +161,8 @@ body {
 /*WHATISいろはに*/
 .pink-layor1{
     position:relative;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-bottom: 50px;
     padding-top: 100px;
@@ -184,7 +184,7 @@ body {
 .pink-white-moji-layout{
     position: absolute;
     top:50%;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .pink-white-moji2{
