@@ -188,6 +188,9 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.pinkpink{
+    text-align: center;
+}
 
 .pink-white-moji2{
     color:#ffffff;
@@ -306,10 +309,10 @@ body {
 .title{
     position: relative;/*+マークの位置基準とするためrelative指定*/
     cursor: pointer;
-    font-size:1rem;
-    font-weight: normal;
+    /* font-size:1rem; */
+    /* font-weight: normal; */
     /* padding: 3% 3% 3% 50px; */
-    transition: all .5s ease;
+    /* transition: all .5s ease; */
 }
 
 /*アイコンの＋と×*/
@@ -348,12 +351,26 @@ body {
 .box {
     display: none;/*はじめは非表示*/
 
-	margin:0 3% 3% 3%;
-    padding: 3%;
+	margin-left: 5%;
+    margin-right: 5%;
 }
 
 .todo-size{
-    width:30%;
+    width:20%;
+    padding: 1%;
+}
+
+.todo-font{
+    font-family:"Zen";
+    font-size:4vw;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+.todo-hokkaido-font{
+    font-family:"Zen";
+    font-size:4vw;
+    margin-bottom: 1%;
+    margin-top: 3%;
 }
 /*SEARCHアコーディオンここまで*/
 
