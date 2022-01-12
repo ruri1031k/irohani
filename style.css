@@ -164,7 +164,7 @@ body {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-    margin-top: 50px;
+    padding-top: 100px;
 }
 .pink-layor-moji{
     font-family: "Zen";
@@ -174,14 +174,15 @@ body {
 }
 .what-irohani-pic{
     position: absolute;
-    top:50px;
-    display: flex;
-    justify-content: center;
+    top:20%;
+    /* display: flex;
+    justify-content: center; */
+    /* text-align: center; */
     width:100%;
 }
 .pink-white-moji-layout{
     position: absolute;
-    top:47%;
+    top:50%;
     text-align: center;
 }
 
@@ -287,7 +288,6 @@ body {
     width: 100%;
     max-width: 900px;
     margin:0 auto;
-    /* background-color: rgba(233,202,165,0.6); */
 }
 
 .accordion-area li{
@@ -299,11 +299,10 @@ body {
 .box-title{
     display: flex;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
+	cursor: pointer;
 }
-/* .title {
-    position: relative
-    
-} */
 
 /*アイコンの＋と×*/
 /* .title::before,
