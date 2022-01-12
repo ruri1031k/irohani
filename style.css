@@ -110,7 +110,8 @@ body {
     position: relative;
     overflow: hidden;
 	cursor: pointer;
-    display: block;
+    /* display: block; */
+    display:inline-block;
 }
 
 .top-button-join{
@@ -120,7 +121,8 @@ body {
     position: relative;
     overflow: hidden;
 	cursor: pointer;
-    overflow: hidden;
+    /* display: block; */
+    display:inline-block;
 }
 
 .butoon{
@@ -130,6 +132,7 @@ body {
 .top-button-join img:nth-child(2) {
     cursor: pointer;
 	position: absolute;
+    /* display:inline-block; */
 	top: 44%;
 	left: 50%;
     transform: translate(-50%, -50%);
@@ -143,6 +146,7 @@ body {
 .top-button-login img:nth-child(2) {
     cursor: pointer;
 	position: absolute;
+    /* display:inline-block; */
 	top: 44%;
 	left: 50%;
     transform: translate(-50%, -50%);
@@ -185,14 +189,14 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 2vw;
+    font-size: 0.1%;
     font-family: "Zen";
 }
 .pink-white-moji2-1{
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 2vw;
+    font-size: 0.1%;
     font-family: "Zen";
     padding-top: 30px;
 }
@@ -200,7 +204,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 2vw;
+    font-size: 0.1%;
     font-family: "Zen";
     padding-bottom: 15px;
 }
@@ -209,7 +213,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 1vw;
+    font-size: 0.1%;
     font-family: "Zen";
     padding-bottom: 20px;
 }
