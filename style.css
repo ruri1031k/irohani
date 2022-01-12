@@ -189,33 +189,34 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1px;
+    font-size: 1.5vw;
     font-family: "Zen";
 }
 .pink-white-moji2-1{
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1px;
+    font-size: 1.5vw;
     font-family: "Zen";
-    padding-top: 30px;
+    padding-top: 15px;
 }
 .pink-white-moji2-2{
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1px;
+    font-size: 1.5vw;
     font-family: "Zen";
-    padding-bottom: 15px;
+    padding-bottom: 8px;
 }
 
 .pink-white-moji2-3{
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 0.1px;
+    font-size: 1.5vw;
     font-family: "Zen";
-    padding-bottom: 20px;
+    padding-bottom: 8
+    px;
 }
 
 
