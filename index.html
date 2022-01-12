@@ -83,32 +83,35 @@
             <div class="yellow-back">
                 <p class="yellow-back-moji">SEARCH</p>
                 <ul class="accordion-area">
-
                     <li>
                         <section>
-                            <div class="box-title">
+                            <div class="box-title title">
                                 <img class="select-size"src="images/select-white-basho.png">
                             </div>
                         <div class="box">
                         <p>内容が入ります。</p>
                         </div>
                         </section>
-                        </li>
+                    </li>
         
                     <li>
                         <section>
-                            <div class="box-title">
+                            <div class="box-title title">
                                 <img class="select-size"src="images/select-white-kougei.png">
                             </div>
                             <div class="box">
-                            <p>内容が入ります。</p>
+                            <ul>
+                                <li>
+                                    <img class="todo-size"src="images/hokkaido.png">
+                                </li>
+                            </ul>
                             </div>
                         </section>
                     </li>
         
                     <li>
                         <section>
-                            <div class="box-title">
+                            <div class="box-title title">
                                 <img class="select-size"src="images/select-white-day.png">
                             </div>
                             <div class="box">
@@ -119,7 +122,7 @@
 
                     <li>
                         <section>
-                            <div class="box-title">
+                            <div class="box-title title">
                                 <img class="select-size"src="images/select-white-money.png">
                             </div>
                             <div class="box">
@@ -199,13 +202,16 @@
         <script>
             //アコーディオンをクリックした時の動作
             $('.title').on('click', function() {//タイトル要素をクリックしたら
-                var findElm = $(this).next(".box");//直後のアコーディオンを行うエリアを取得し
-                $(findElm).slideToggle();//アコーディオンの上下動作
+                $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                
+                var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
                 
                 if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-                    $(this).removeClass('close');//クラス名を除去し
+                    $(this).removeClass('close');//クラス名を除去    
                 }else{//それ以外は
-                    $(this).addClass('close');//クラス名closeを付与
+                    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+                    $(findElm).slideDown(500);//アコーディオンを開く
                 }
             });
 
@@ -214,7 +220,7 @@
                 $('.accordion-area li:first-of-type section').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
                 $(".open").each(function(index, element){	//openクラスを取得
                     var Title =$(element).children('.title');	//openクラスの子要素のtitleクラスを取得
-                    $(Title).addClass('close');				//タイトルにクラス名closeを付与し
+                    $(Title).addClass('close');				///タイトルにクラス名closeを付与し
                     var Box =$(element).children('.box');	//openクラスの子要素boxクラスを取得
                     $(Box).slideDown(500);					//アコーディオンを開く
                 });
