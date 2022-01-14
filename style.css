@@ -193,7 +193,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 2vw;
+    font-size: 1%;
     font-family: "Zen";
 }
 .pink-white-moji2-1{
@@ -305,6 +305,23 @@ body {
 .footer-icon-size{
     width:20%;
     padding-top: 5%;
+}
+.footer-btn-layout{
+    display: flex;
+    justify-content:center;
+}
+.footer-moji{
+    font-family: "Zen";
+    font-size:2.5vw;
+    color: #ffffff;
+}
+
+.footer-moji2{
+    font-family: "Zen";
+    font-size:0.1rem;
+    color: #ffffff;
+    padding-top: 3%;
+    padding-bottom: 8%;
 }
 /*SEARCHアコーディオン*/
 
