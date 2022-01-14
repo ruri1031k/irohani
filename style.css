@@ -211,7 +211,7 @@ body {
     position: absolute;
     top:43%;
     text-align: center;
-    width:90%;
+    /* width:90%; */
     /* margin-left: auto;
     margin-right: auto; */
 }
@@ -220,14 +220,14 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: "Zen";
 }
 .pink-white-moji2-1{
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: "Zen";
     padding-top: 5%;
 }
@@ -235,7 +235,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: "Zen";
     padding-bottom: 20px;
 }
@@ -244,7 +244,7 @@ body {
     color:#ffffff;
     /* position: absolute;
     top:198%; */
-    font-size: 1vw;
+    font-size: 2vw;
     font-family: "Zen";
     padding-bottom: 20px;
 }
