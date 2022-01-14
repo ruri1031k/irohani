@@ -11,16 +11,30 @@
         <link rel="icon" type="images/png" href="images/irohanilogo.png">
         <link rel="stylesheet" type="text/css" href="css/9-2-1.css">
         <link rel="stylesheet" type="text/css" href="css/5-1-11.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/6-1-6.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/6-1-7.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="css/6-1-1.css">
     </head>
     <body>
         <!-- メインビジュアル-->
-        <div class="gizakasa">
-            <img class="main-vis"src="images/MV01.jpg">
+        <!-- <div class="gizakasa">
+            <img class="main-vis"src="images/MV01.jpg"> -->
             <!--ギザギざ-->
-            <div class="giza">
+            <!-- <div class="giza">
                 <img src="images/giza.png">
             </div>
-        </div>
+        </div> -->
+            <ul class="mvslide">
+                <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv01.png"></li>
+                <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv02.png"></li>
+                <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv03.png"></li>
+            </ul>
+            <!-- <li><img class="main-vis mvslide-item"src="images/MV01.jpg"></li> -->
+
+
 
         <!--白背景設置-->
         <!-- <img class="background"src="images/irohani-back.png"> -->
@@ -80,7 +94,7 @@
             
         </div>
         <!--Search-->
-        <div class="yellow-layor">
+        <div class="yellow-layor yellow-aida">
             <div class="yellow-back">
                 <p class="yellow-back-moji">SEARCH</p>
                 <ul class="accordion-area">
@@ -90,25 +104,23 @@
                                 <img class="select-size"src="images/select-white-basho.png">
                             </div>
                         <div class="box">
-                                    <p class="todo-hokkaido-font">◆北海道</p>
-                                    <p class="todo-font">◆東北</p>                                      
-                                    <p class="todo-font">◆関東</p>
-                                    <div class="todo-layout01">
-                                        <div class="">
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                            <a href=""class="todo-btn-font">東京</a>
-                                        </div>                                        
-                                    </div>
+                            <p class="todo-hokkaido-font">◆北海道</p>
+                            <p class="todo-font">◆東北</p>                                      
+                            <p class="todo-font">◆関東</p>
+                            <div class="todo-layout01">
+                                <div class="">
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                    <a href=""class="todo-btn-font">東京</a>
+                                </div>                                        
+                            </div>
                         </div>
                         </section>
                     </li>
@@ -152,18 +164,26 @@
                     </li>
                         
                 </ul>
-                <p class="yellow-back-moji01 yellow-layor"></p>
+                <p class="yellow-back-moji yellow-layor"></p>
             </div>
             
         </div>
         
         <!--トピック-->
-        <div class="pink-layor1">
-            <img src="images/background-pink.png">
+        <div class="pink-layor2">
+            <!-- <img src="images/background-pink.png"> -->
             <div class="topics-title-layout">
                 <p class="topics-title">TOPICS</p>
             </div>
+                <div class="slider ppp">
+                    <li><a href=""><img src="images/topics-recom.png" alt=""></a></li>
+                    <li><a href=""><img src="images/topics-recom.png" alt=""></a></li>
+                    <li><a href=""><img src="images/topics-recom.png" alt=""></a></li>
+                    <li><a href=""><img src="images/topics-recom.png" alt=""></a></li>
+                    <!--/slider-->
+                </div>
         </div>
+        <img class="pinkhashi"src="images/background-pink-hashi.png">
 
         <!--シェア-->
         <div class="yellow-layor">
@@ -200,7 +220,9 @@
 
             
         </footer>
+        
 
+        
 
 
         
@@ -254,8 +276,6 @@
             });
         </script>
 
-
-
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!--自作のJS-->
         <script src="js/5-1-11.js"></script>
@@ -275,7 +295,50 @@
                 $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
             });
         </script>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--自作のJS-->
+        <script src="js/6-1-7.js"></script>
         <script>
+            $('.slider').slick({
+                autoplay: true,//自動的に動き出すか。初期値はfalse。
+                infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+                speed: 500,//スライドのスピード。初期値は300。
+                slidesToShow: 3,//スライドを画面に3枚見せる
+                slidesToScroll: 1,//1回のスクロールで1枚の写真を移動して見せる
+                prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+                nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+                centerMode: true,//要素を中央ぞろえにする
+                variableWidth: true,//幅の違う画像の高さを揃えて表示
+                dots: true,//下部ドットナビゲーションの表示
+            });
+        </script>
+        
+        <!--メインビジュアルjava-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!--自作のJS-->
+        <script src="js/6-1-1.js"></script>
+        <script>
+        $('.mvslide').slick({
+                autoplay: true,//自動的に動き出すか。初期値はfalse。
+                autoplaySpeed: 3000,//次のスライドに切り替わる待ち時間
+                speed:1000,//スライドの動きのスピード。初期値は300。
+                infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+                slidesToShow: 1,//スライドを画面に3枚見せる
+                slidesToScroll: 1,//1回のスクロールで3枚の写真を移動して見せ
+                pauseOnFocus: false,//フォーカスで一時停止を無効
+                pauseOnHover: false,//マウスホバーで一時停止を無効
+                arrows: true,//左右の矢印あり
+                prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
+                nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
+            });
+
+        //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
+        $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
+            $('.slider').slick('slickPlay');
+        });
         </script>
     </body>
 </html>
