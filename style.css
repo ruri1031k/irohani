@@ -528,7 +528,12 @@ body {
 }
 
 .todo-size2{
-    
+    width:22%;
+    height:auto;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top:1%;
+    padding-bottom: 1%;
     opacity: 0;
 }
 
@@ -542,7 +547,7 @@ body {
 	position:fixed;
     z-index: 9999;/*ボタンを最前面に*/
 	top:3%;
-	right:5%;
+	right:4%;
 	cursor: pointer;
     background-image:url(images/menu.png);
     background-repeat:no-repeat ;
@@ -556,7 +561,7 @@ body {
     width: 15vw;
     height:15vw;
     top:3%;
-	right:5%;
+	right:4%;
     background-image:url(images/close.png);
     background-repeat:no-repeat ;
     background-size: 100%;
