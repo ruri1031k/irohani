@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
         <!-- ページタイトル(タブに表示される名前) -->
 		<title>いろはに</title>
-        <meta name="description" content="あああ">
+        <meta name="description" content="いろはに-日本伝統工芸ワークショップ予約サイト">
         <!-- CSS -->
         <link rel="stylesheet" href="style.css" />
         <link rel="icon" type="images/png" href="images/irohanilogo.png">
@@ -87,9 +87,7 @@
                 <ul class="accordion-area">
                     <li>
                         <section>
-                            <div class="box-title title">
-                                <img class="select-size"src="images/select-white-basho.png">
-                            </div>
+                        <div class="box-title title01"></div>
                         <div class="box">
                             <p class="todo-hokkaido-font">◆北海道</p>
                             <ul class="todo-layout01">
@@ -217,8 +215,7 @@
         
                     <li>
                         <section>
-                            <div class="box-title title">
-                                <img class="select-size"src="images/select-white-kougei.png">
+                            <div class="box-title title02">
                             </div>
                             <div class="box">
                                 <p>内容が入ります。</p>
@@ -228,8 +225,7 @@
         
                     <li>
                         <section>
-                            <div class="box-title title">
-                                <img class="select-size"src="images/select-white-day.png">
+                            <div class="box-title title03">
                             </div>
                             <div class="box">
                             <p>内容が入ります。</p>
@@ -239,8 +235,7 @@
 
                     <li>
                         <section>
-                            <div class="box-title title">
-                                <img class="select-size"src="images/select-white-money.png">
+                            <div class="box-title title04">
                             </div>
                             <div class="box">
                             <p>内容が入ります。</p>
@@ -357,7 +352,7 @@
         <script src="js/9-2-1.js"></script>
         <script>
             //アコーディオンをクリックした時の動作
-            $('.title').on('click', function() {//タイトル要素をクリックしたら
+            $('.box-title').on('click', function() {//タイトル要素をクリックしたら
                 $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
                 
                 var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
@@ -371,15 +366,32 @@
                 }
             });
 
-            //ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
-            $(window).on('load', function(){
-                $('.accordion-area li:first-of-type section').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
-                $(".open").each(function(index, element){	//openクラスを取得
-                    var Title =$(element).children('.title');	//openクラスの子要素のtitleクラスを取得
-                    $(Title).addClass('close');				///タイトルにクラス名closeを付与し
-                    var Box =$(element).children('.box');	//openクラスの子要素boxクラスを取得
-                    $(Box).slideDown(500);					//アコーディオンを開く
-                });
+            
+        </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--自作のJS-->
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".title01").click(function () {//ボタンがクリックされたら
+                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            });
+        </script>
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".title02").click(function () {//ボタンがクリックされたら
+                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            });
+        </script>
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".title03").click(function () {//ボタンがクリックされたら
+                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+            });
+        </script>
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".title04").click(function () {//ボタンがクリックされたら
+                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
             });
         </script>
 
