@@ -513,14 +513,6 @@ body {
     margin-right: 5%;
 }
 
-/* .box p{
-    font-family:"Zen";
-    font-size:4vw;
-    margin-bottom: 1%;
-    margin-top: 1%;
-    color: #dd8180;
-} */
-
 .todo-layout01{
     text-align: center;
 }
@@ -542,16 +534,8 @@ body {
     padding-top:0.5%;
     padding-bottom: 1%;
     border: solid 0.4vw #603813;
-    
-    /* border-radius:33% 33% 33% 33%; */
 }
 
-/* .todo-layout01 li{
-    display: inline-block;
-   justify-content: center ;
-    width:20%;
-    font-size:1rem;
-} */
 .todo-font{
     font-family:"Zen";
     font-size:4vw;
@@ -569,28 +553,48 @@ body {
     padding-left: 5%;
 }
 
-/* .todo{
-    
-} */
-
-.todo li{
-    display: inline-block;
-    font-family:"Zen";
-    font-size:3vw;
-    color: #603813;
-    background: #ffffff;
-    width:5%;
-    border: solid 0.4vw #603813;
-    text-align: center;
+.todo-size{
+    width:20%;
+    height:auto;
+    padding-right: 1%;
+    padding-left: 1%;
+    padding-top:3%;
+    padding-bottom: 2%;
 }
+
 /*SEARCHアコーディオンここまで*/
 
 
 
 
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+	position:fixed;
+    z-index: 9999;/*ボタンを最前面に*/
+	top:3%;
+	right:5%;
+	cursor: pointer;
 
+    background-image:url(images/menu.png);
+    background-repeat:no-repeat ;
+    background-size: 100%;
+    width: 15vw;
+    height:15vw;
+}
+/*ナビゲーションここまで*/
 
+.openbtn.active {
 
+    width: 15vw;
+    height:15vw;
+    top:3%;
+	right:5%;
+
+    background-image:url(images/close.png);
+    background-repeat:no-repeat ;
+    background-size: 100%;
+
+}
 
 
 /*ナビゲーション*/
@@ -638,12 +642,10 @@ body {
 }
 
 /*リストのレイアウト設定*/
-
 #g-nav li{
 	list-style: none;
     text-align: center; 
 }
-
 #g-nav li a{
 	color:white;
     font-family: "Zen";
@@ -652,52 +654,4 @@ body {
 	display: block;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-}
-
-/*========= ボタンのためのCSS ===============*/
-.openbtn{
-	position:fixed;
-    z-index: 9999;/*ボタンを最前面に*/
-	top:10px;
-	right: 20px;
-	cursor: pointer;
-    /* width: 50px;
-    height:50px; */
-    margin-top: 10px;
-    width: 15vw;
-    height:15vw;
-    background: rgba(221,129,128,0.9);
-    /* transform: rotate(45deg); */
-    /* position: relative; */
-    border-radius:50% 50% 50% 50%;
-    /* border:  solid 0.1px rgba(255,255,255,0.7); */
-}
-/*ナビゲーションここまで*/
-
-.openbtn.active {
-
-    margin-top: 10px;
-    width: 50px;
-    height: 50px;
-    
-    /* transform: rotate(45deg); */
-    position: fixed;
-    border-radius:50% 50% 50% 50%;
-    /* border:  solid 0.1px rgba(255,255,255,0.7); */
-    /*border:  solid 0.1px rgba(255,255,255,0.7); */
-    /* src: url(../irohaniD6/images/join-pink.png); */
-    /* transform: rotate(-45deg); */
-    /* width: 30%; */
-}
-
-.text_box{
-    /* width: 2px; */
-    font-size: 12px;
-    padding-top: 5px;
-    padding-bottom:2px;
-    padding-right: 30px;
-    /* transform: rotate(-45deg); */
-    text-align: center;
-    position: fixed;
-    font-family: "Zen";
 }

@@ -20,24 +20,11 @@
     </head>
     <body>
         <!-- メインビジュアル-->
-        <!-- <div class="gizakasa">
-            <img class="main-vis"src="images/MV01.jpg"> -->
-            <!--ギザギざ-->
-            <!-- <div class="giza">
-                <img src="images/giza.png">
-            </div>
-        </div> -->
             <ul class="mvslide">
                 <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv01.png"></li>
                 <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv02.png"></li>
                 <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv03.png"></li>
             </ul>
-            <!-- <li><img class="main-vis mvslide-item"src="images/MV01.jpg"></li> -->
-
-
-
-        <!--白背景設置-->
-        <!-- <img class="background"src="images/irohani-back.png"> -->
 
         <!--メインロゴ-->
         <div class="main-logo-layor">
@@ -105,9 +92,28 @@
                             </div>
                         <div class="box">
                             <p class="todo-hokkaido-font">◆北海道</p>
-                            <p class="todo-font">◆東北</p>                                      
+                            <ul>
+                                <li>
+                                    <a href=""><img class="todo-size"src="images/hokkaido.png"></a>
+                                </li>
+                            </ul>
+                            <p class="todo-font">◆東北</p>
+                            <ul>
+                                <li>
+                                    <a href=""><img class="todo-size"src="images/aomori.png"></a>
+                                    <a href=""><img class="todo-size"src="images/iwate.png"></a>
+                                    <a href=""><img class="todo-size"src="images/akita.png"></a>
+                                </li>
+                            </ul>                                      
                             <p class="todo-font">◆関東</p>
-                            <div class="todo-layout01">
+                            <ul>
+                                <li>
+                                    <a href=""><img class="todo-size"src="images/hokkaido.png"></a>
+                                    
+                                    <img class="todo-size"src="images/aomori.png">
+                                </li>
+                            </ul>
+                            <!-- <div class="todo-layout01">
                                 <div class="">
                                     <a href=""class="todo-btn-font">東京</a>
                                     <a href=""class="todo-btn-font">東京</a>
@@ -115,12 +121,8 @@
                                     <a href=""class="todo-btn-font">東京</a>
                                     <a href=""class="todo-btn-font">東京</a>
                                     <a href=""class="todo-btn-font">東京</a>
-                                    <a href=""class="todo-btn-font">東京</a>
-                                    <a href=""class="todo-btn-font">東京</a>
-                                    <a href=""class="todo-btn-font">東京</a>
-                                    <a href=""class="todo-btn-font">東京</a>
                                 </div>                                        
-                            </div>
+                            </div> -->
                         </div>
                         </section>
                     </li>
@@ -133,7 +135,8 @@
                             <div class="box">
                             <ul>
                                 <li>
-                                    <img class="todo-size"src="images/hokkaido.png">
+                                    <a href=""><img class="todo-size"src="images/hokkaido.png"></a>
+                                    
                                     <img class="todo-size"src="images/aomori.png">
                                 </li>
                             </ul>
@@ -229,8 +232,7 @@
 
         
         <!--メニューボタン-->
-        <div class="openbtn">
-        </div>
+        <div class="openbtn"></div>
         <nav id="g-nav">
             <div id="g-nav-list">
                 <ul>
@@ -243,9 +245,31 @@
             </div>
         </nav>
 
+    
 
 
         
+
+
+        <!--メニューバー-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!--自作のJS-->
+        <script src="js/5-1-11.js"></script>
+        <script>
+            $(".openbtn").click(function () {//ボタンがクリックされたら
+                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+                $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+            });
+
+            $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+                $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+                $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+            });
+        </script>
+
+
+
+        <!--SEARCHアコーディオン-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!--自作のJS-->
         <script src="js/9-2-1.js"></script>
@@ -277,26 +301,8 @@
             });
         </script>
 
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-        <!--自作のJS-->
-        <script src="js/5-1-11.js"></script>
-        <script>
-            $(".openbtn").click(function () {//ボタンがクリックされたら
-                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-                $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-                if ($(this).text() === 'CLOSE') {
-                    $(this).text('MENU');
-                } else {
-                    $(this).text('CLOSE');
-                }
-            });
 
-            $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-                $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
-                $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
-            });
-        </script>
-
+        <!--TOPICSスライド-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!--自作のJS-->
@@ -315,8 +321,9 @@
                 dots: true,//下部ドットナビゲーションの表示
             });
         </script>
+
         
-        <!--メインビジュアルjava-->
+        <!--メインビジュアル-->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <!--自作のJS-->
@@ -335,11 +342,12 @@
                 prevArrow: '<div class="slick-prev"></div>',//矢印部分PreviewのHTMLを変更
                 nextArrow: '<div class="slick-next"></div>',//矢印部分NextのHTMLを変更
             });
-
         //スマホ用：スライダーをタッチしても止めずにスライドをさせたい場合
         $('.slider').on('touchmove', function(event, slick, currentSlide, nextSlide){
             $('.slider').slick('slickPlay');
         });
         </script>
+
+
     </body>
 </html>
