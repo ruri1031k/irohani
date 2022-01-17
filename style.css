@@ -516,24 +516,9 @@ body {
 .todo-layout01{
     padding-left: 10%;
     padding-right: 10%;
+    display: flex;
+    justify-content: flex-start;
 }
-
-.todo-layout02{
-    display:flex;
-    justify-content:flex-start;
-}
-
-/* .todo-btn-font{
-    font-family:"Zen";
-    font-size:3vw;
-    color: #603813;
-    background-color: #ffffff;
-    padding-left:2%;
-    padding-right:2%;
-    padding-top:0.5%;
-    padding-bottom: 1%;
-    border: solid 0.4vw #603813;
-} */
 
 .todo-font{
     font-family:"Zen";
@@ -557,8 +542,8 @@ body {
     height:auto;
     padding-right: 1%;
     padding-left: 1%;
-    padding-top:3%;
-    padding-bottom: 2%;
+    padding-top:1%;
+    padding-bottom: 1%;
 }
 
 /*SEARCHアコーディオンここまで*/
