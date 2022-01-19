@@ -380,13 +380,13 @@ body {
 
 
 /*　closeというクラスがついたら形状変化　*/
-.title.close::before{
+/* .title.close::before{
 	transform: rotate(45deg);
 }
 
 .title.close::after{
 	transform: rotate(-45deg);
-}
+} */
 
 /*アコーディオンで現れるエリア*/
 .box {

@@ -228,7 +228,15 @@
                             <div class="box-title title03">
                             </div>
                             <div class="box">
-                            <p>内容が入ります。</p>
+                                <p class="todo-hokkaido-font">◆北海道</p>
+                                <ul class="todo-layout01">
+                                    <li>
+                                        <a href=""><img class="todo-size"src="images/hokkaido.png"></a>
+                                        <img class="todo-size2"src="images/fukushima.png">
+                                        <img class="todo-size2"src="images/fukushima.png">
+                                        <img class="todo-size2"src="images/fukushima.png">
+                                    </li>
+                                </ul>  
                             </div>
                         </section>
                     </li>
@@ -238,7 +246,7 @@
                             <div class="box-title title04">
                             </div>
                             <div class="box">
-                            <p>内容が入ります。</p>
+                                <p>内容が入ります。</p>
                             </div>
                         </section>
                     </li>
@@ -274,10 +282,10 @@
                 <div class="share-sukima">
                     <ul class="share-layout">
                         <li>
-                            <img class="share-icons"src="images/Instagram-icon.png">
+                            <a href=""> <img class="share-icons"src="images/Instagram-icon.png"></a>
                         </li>
                         <li>
-                            <img class="share-icons"src="images/LINE-icon.png">
+                            <a href=""><img class="share-icons"src="images/LINE-icon.png"></a>
                         </li>
                     </ul>
                 </div>
@@ -350,7 +358,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!--自作のJS-->
         <script src="js/9-2-1.js"></script>
-        <script>
+        <!-- <script>
             //アコーディオンをクリックした時の動作
             $('.box-title').on('click', function() {//タイトル要素をクリックしたら
                 $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
@@ -367,31 +375,81 @@
             });
 
             
-        </script>
+        </script> -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <!--自作のJS-->
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title01").click(function () {//ボタンがクリックされたら
                 $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+                $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                
+                var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+                
+                if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+                    $(this).removeClass('close');//クラス名を除去
+                    $(this).toggleClass('active');    
+                }else{//それ以外は
+                    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
+                    $(findElm).slideDown(500);//アコーディオンを開く
+                    $(this).toggleClass('active');
+                }
             });
         </script>
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title02").click(function () {//ボタンがクリックされたら
                 $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+                $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                
+                var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+                
+                if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+                    $(this).removeClass('close');//クラス名を除去  
+                }else{//それ以外は
+                    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し 
+                    $(findElm).slideDown(500);//アコーディオンを開く
+                }
             });
         </script>
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title03").click(function () {//ボタンがクリックされたら
                 $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+                $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                
+                var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+
+                if($(".title02").hasClass('active')){
+                    $(this).toggleClass('active');
+                }
+                
+                if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+                    $(this).removeClass('close');//クラス名を除去  
+                }else{//それ以外は
+                    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し 
+                    $(findElm).slideDown(500);//アコーディオンを開く
+                }
             });
         </script>
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title04").click(function () {//ボタンがクリックされたら
                 $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+                // $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                
+                var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
+                
+                if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+                    $(this).removeClass('close');//クラス名を除去  
+                }else{//それ以外は
+                    $('.close').removeClass('close'); //クラス名closeを全て除去した後
+                    $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し 
+                    $(findElm).slideDown(500);//アコーディオンを開く
+                }
             });
         </script>
 
