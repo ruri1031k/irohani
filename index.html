@@ -18,7 +18,7 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
         <link rel="stylesheet" type="text/css" href="css/6-1-1.css">
     </head>
-    <body>
+    <body class="">
         <!-- メインビジュアル-->
             <ul class="mvslide">
                 <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv01.png"></li>
@@ -307,8 +307,6 @@
                 </ul>
                 <p class="footer-moji2">©︎irohani.All Rights Reserved.</p>
             </div>
-
-            
         </footer>
         
 
@@ -323,7 +321,7 @@
                 <ul>
                     <li><a href="index.html">Top</a></li> 
                     <li><a href="#">ABOUT</a></li> 
-                    <li><a href="#">SEARCH</a></li> 
+                    <li><a href="search.html">SEARCH</a></li> 
                     <li><a href="#">TOPICS</a></li> 
                     <li><a href="#">ATTENTION</a></li> 
                 </ul>
@@ -381,26 +379,22 @@
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title01").click(function () {//ボタンがクリックされたら
-                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
                 $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
                 
                 var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
                 
                 if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-                    $(this).removeClass('close');//クラス名を除去
-                    $(this).toggleClass('active');    
+                    $(this).removeClass('close');//クラス名を除去  
                 }else{//それ以外は
                     $('.close').removeClass('close'); //クラス名closeを全て除去した後
                     $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
                     $(findElm).slideDown(500);//アコーディオンを開く
-                    $(this).toggleClass('active');
                 }
             });
         </script>
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title02").click(function () {//ボタンがクリックされたら
-                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
                 $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
                 
                 var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
@@ -421,10 +415,6 @@
                 $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
                 
                 var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
-
-                if($(".title02").hasClass('active')){
-                    $(this).toggleClass('active');
-                }
                 
                 if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
                     $(this).removeClass('close');//クラス名を除去  
@@ -438,8 +428,7 @@
         <script src="js/5-1-11.js"></script>
         <script>
             $(".title04").click(function () {//ボタンがクリックされたら
-                $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
-                // $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
                 
                 var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
                 
