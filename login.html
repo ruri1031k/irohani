@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 文字コード設定 -->
+       <meta charset="utf-8" />
+       <!-- ページタイトル(タブに表示される名前) -->
+       <title>いろはに</title>
+       <meta name="description" content="いろはに-日本伝統工芸ワークショップ予約サイト">
+       <!-- CSS -->
+       <link rel="stylesheet" href="style.css" />
+       <link rel="icon" type="images/png" href="images/irohanilogo.png">
+       <link rel="stylesheet" type="text/css" href="css/9-2-1.css">
+       <link rel="stylesheet" type="text/css" href="css/5-1-11.css">
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+       <link rel="stylesheet" type="text/css" href="css/6-1-6.css">
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+       <link rel="stylesheet" type="text/css" href="css/6-1-7.css">
+       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+       <link rel="stylesheet" type="text/css" href="css/6-1-1.css">
+   </head>
+   <bady>
+       <!--メニューボタン-->
+       <div class="openbtn"></div>
+       <nav id="g-nav">
+           <div id="g-nav-list">
+               <ul>
+                   <li><a href="index.html">Top</a></li> 
+                   <li><a href="search.html">SEARCH</a></li> 
+                   <li><a href="#">RANKING</a></li> 
+                   <li><a href="attention.html">ATTENTION</a></li>
+                   <li><a href="mypage.html">MY PAGE</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <!-- メインビジュアル-->
+       <img class=""src="images/mv-login.png">
+       <div class="reserve-layout">
+            <img class="login-page"src="images/loginpage.png">
+            <a href="index.html"><img class="login-page-size"src="images/login.png"></a>
+       </div>
+
+       <!--フッター-->
+       <footer class="footer-aida">
+        <div class="footer-pink">
+            <img class="footer-icon-size"src="images/footer-irohani.png">
+            <ul class="footer-btn-layout">
+                <li>
+                    <a class="footer-moji"href="">　ご利用規約　</a>
+                </li>
+                <li>
+                   <a class="footer-moji"href="">　お問合わせ　</a>
+                </li>
+            </ul>
+            <p class="footer-moji2">©︎irohani.All Rights Reserved.</p>
+        </div>
+        </footer>
+
+
+
+       <!--メニューバー-->
+       <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+       <!--自作のJS-->
+       <script src="js/5-1-11.js"></script>
+       <script>
+           $(".openbtn").click(function () {//ボタンがクリックされたら
+               $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+               $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+           });
+
+           $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+               $(".openbtn").removeClass('active');//ボタンの activeクラスを除去し
+               $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
+           });
+       </script>
+   </bady>
+</html>

@@ -575,6 +575,7 @@ body {
 .footer-btn-layout{
     display: flex;
     justify-content:center;
+    padding-top:2%
 }
 .footer-moji{
     font-family: "Zen";
@@ -629,7 +630,7 @@ body {
 	top:-120%;
     left:0;
 	width:100%;
-    height: 45%;/*ナビの高さ*/
+    height: 80%;/*ナビの高さ*/
 	background:rgba(221,129,128,0.7);
     /* border-bottom:  solid 1px #ffffff; */
     /*動き*/
@@ -647,7 +648,7 @@ body {
     position: fixed;
     z-index: 999; 
     width: 100%;
-    height: 45%;/*表示する高さ*/
+    height: 80%;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
@@ -673,7 +674,8 @@ body {
 	color:white;
     font-family: "Zen";
 	text-decoration: none;
-	padding:10px;
+	padding-top:10%;
+    padding-bottom: 10%;
 	display: block;
 	text-transform: uppercase;
 	/* letter-spacing: 0.1em; */
@@ -702,17 +704,17 @@ body {
     font-size: 3vw;
 }
 .search-shibori-layout{
-   display: flex;
-   justify-content: center;
-   padding-top: 5%;
-}
-.search-shibori-size1{
-    padding-right: 10%;
-    padding-left: 20%;
-}
-.search-shibori-size2{
-    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5%;
     padding-left: 10%;
+    padding-right: 10%;
+}
+.shibori-size1{
+    padding-right: 30px;
+}
+.shibori-size2{
+    padding-left: 30px;
 }
 .search-btn-layout{
     text-align: center;
@@ -981,3 +983,27 @@ body {
     padding-left: 10%;
     padding-right: 20%;
  }
+
+/*--------------------------------------------*/
+
+.login-page{
+    padding-top:10%;
+    width: 90%;
+}
+.login-page-size{
+    padding-top:10%;
+    width: 30%;
+}
+
+.mypage-size{
+    padding-top:10%;
+    width: 90%;
+}
+.mypage-size2{
+    padding-top:10%;
+    width: 80%;
+}
+.mypage-size2-2{
+    padding-top:3%;
+    width: 80%;
+}
