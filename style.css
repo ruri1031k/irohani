@@ -559,7 +559,7 @@ body {
 }
 /*footer*/
 .footer-aida{
-    padding-top: 20%;
+    padding-top: 15%;
 }
 .footer-pink{
     background: #dd8180;
@@ -899,7 +899,85 @@ body {
 .reserve-btn{
     width:40%;
     padding-top:10%;
+    filter: drop-shadow(4px 4px 5px #dd8180);
 }
 .reserve-layout{
     text-align: center;
 }
+
+/*------------------------------------------------*/
+.obi-size{
+    width: 100%;
+    padding-top: 5%;
+}
+.reserve-title-moji1{
+    font-family: "Zen";
+    color:#603813;
+    font-size: 4vw;
+}
+.reserve-title-moji2{
+    font-family: "Zen";
+    color:#dd8180;
+    font-size: 4vw;
+    padding-right: 1%;
+}
+.ryoukin-size{
+    padding-top:4%;
+    width: 90%;
+}
+.ryoukin-btn{
+    margin-top: 10%;
+    width:30%;
+
+}
+.kakutei-btn{
+    margin-top: 10%;
+    width:40%;
+
+}
+
+  
+
+.arigato-mv{
+    width: 70%;
+    padding-top: 3%;
+}
+.arigato-moji{
+    font-family: "Zen";
+    color:#ffffff;
+    font-size: 8vw;
+    padding-top: 10%;
+}
+.arigato-moji1{
+    font-family: "Zen";
+    color:#ffffff;
+    font-size: 5vw;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+.arigato-moji2{
+    font-family: "Zen";
+    color:#ffffff;
+    font-size: 3vw;
+    padding-top: 1%;
+}
+.arigato-moji3{
+    font-family: "Zen";
+    color:#ffffff;
+    font-size: 3vw;
+    padding-top: 1%;
+    padding-bottom: 8%;
+}
+
+.arigato-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.arigato-btn-size1{
+   padding-left: 20%;
+   padding-right: 10%;
+}
+.arigato-btn-size2{
+    padding-left: 10%;
+    padding-right: 20%;
+ }
