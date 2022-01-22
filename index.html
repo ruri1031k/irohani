@@ -21,7 +21,7 @@
     <body class="">
         <!-- メインビジュアル-->
             <ul class="mvslide">
-                <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv01.png"></li>
+                <li class="mvslide-item main-vis"><a href="glass.html"><img class="main-vis"src="images/mv01.png"></a></li>
                 <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv02.png"></li>
                 <li class="mvslide-item main-vis"><img class="main-vis"src="images/mv03.png"></li>
             </ul>
@@ -34,7 +34,7 @@
         <!--JOIN/LOGINボタン-->
         <div class="butoon">
             <div class="top-button-join">
-                <a href=""><img src="images/join-pink.png"><img src="images/join.png"></a>
+                <a href="termsofservice-login.html"><img src="images/join-pink.png"><img src="images/join.png"></a>
             </div>
             <div class="top-button-login">
                 <a href="login.html"><img src="images/login-pink.png"><img src="images/login.png"></a>
@@ -266,10 +266,10 @@
             
                 <div class="slider">
                     
-                    <li><a href=""><img src="images/topics-rank.png" alt=""></a></li>
-                    <li><a href=""><img src="images/topics-recom.png" alt=""></a></li>
-                    <li><a href=""><img src="images/topics-new.png" alt=""></a></li>
-                    <li><a href=""><img src="images/topics-recom.png" alt=""></a></li>
+                    <li><a href="ranking.html"><img src="images/topics-rank.png" alt=""></a></li>
+                    <li><a href="ranking.html"><img src="images/topics-recom.png" alt=""></a></li>
+                    <li><a href="ranking.html"><img src="images/topics-new.png" alt=""></a></li>
+                    <li><a href="ranking.html"><img src="images/topics-recom.png" alt=""></a></li>
                     <!--/slider-->
                 </div>
         </div>
@@ -321,7 +321,7 @@
                 <ul>
                     <li><a href="index.html">Top</a></li> 
                     <li><a href="search.html">SEARCH</a></li> 
-                    <li><a href="#">RANKING</a></li> 
+                    <li><a href="ranking.html">RANKING</a></li> 
                     <li><a href="attention.html">ATTENTION</a></li>
                     <li><a href="mypage.html">MY PAGE</a></li>  
                 </ul>
@@ -380,6 +380,8 @@
         <script>
             $(".title01").click(function () {//ボタンがクリックされたら
                 $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
+                $(this).toggleClass('active');
+
                 
                 var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
                 

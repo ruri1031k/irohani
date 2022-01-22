@@ -1007,3 +1007,18 @@ body {
     padding-top:3%;
     width: 80%;
 }
+
+.yes-size{
+    padding-top: 15%;
+    padding-left:10%;
+    padding-right: 30%;
+}
+.no-size{
+    padding-top: 15%;
+    padding-left:30%;
+    padding-right: 10%;
+}
+.yesno-btn{
+    display: flex;
+    justify-content:center;
+}

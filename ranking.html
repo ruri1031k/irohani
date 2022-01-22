@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- 文字コード設定 -->
+         <!-- 文字コード設定 -->
 		<meta charset="utf-8" />
         <!-- ページタイトル(タブに表示される名前) -->
 		<title>いろはに</title>
@@ -28,23 +28,35 @@
                     <li><a href="search.html">SEARCH</a></li> 
                     <li><a href="#">RANKING</a></li> 
                     <li><a href="attention.html">ATTENTION</a></li>
-                    <li><a href="mypage.html">MY PAGE</a></li>  
+                    <li><a href="mypage.html">MY PAGE</a></li> 
                 </ul>
             </div>
         </nav>
-
-        <img class=""src="images/mv-mypage.png">
-        <div class="reserve-layout">
-            <img class="mypage-size"src="images/cusinfo.png">
-            <img class="mypage-size"src="images/yoyakurireki.png">
-            <a href=""><img class="mypage-size2"src="images/iineichiran.png"></a>
-            <a href="termsofservice.html"><img class="mypage-size2-2"src="images/riyoukiyaku.png"></a>
-            <a href=""><img class="mypage-size2-2"src="images/tsuuchi.png"></a>
-            <a href=""><img class="mypage-size2-2"src="images/toiawase.png"></a>
-            <a href="index.html"><img class="login-page-size"src="images/top.png"></a>
+        <!-- メインビジュアル-->
+        <img class=""src="images/mv-ranking.png">
+        <!--なんか残る履歴-->
+        <div class="rireki-layout">
+            <a href="index.html"><p class="rireki-moji1">TOP</p></a>
+            <p class="rireki-moji2">　◆　</p>
+            <a href="ranking.html"><p class="rireki-moji1">RANKING</p></a>
+            <p class="rireki-moji2">　◆　</p>
+            <a href="ranking.html"><p class="rireki-moji1">今月のおすすめ</p></a>
         </div>
-
-
+        <div class="search-shibori-layout">
+            <a href=""><img class="shibori-size1"src="images/onunume.png"></a>
+        </div>
+        <div class="search-btn-layout">
+            <a href="uchiwa.html"><img class="search-btn"src="images/search01.png"></a>
+            <a href=""><img class="search-btn"src="images/search02.png"></a>
+            <a href=""><img class="search-btn"src="images/search03.png"></a>
+            <a href=""><img class="search-btn"src="images/search04.png"></a>
+            <a href=""><img class="search-btn"src="images/search05.png"></a>
+            <a href=""><img class="search-btn"src="images/search06.png"></a>
+            <a href=""><img class="search-btn"src="images/search07.png"></a>
+            <a href=""><img class="search-btn"src="images/search08.png"></a>
+            <a href=""><img class="search-btn"src="images/search09.png"></a>
+            <a href=""><img class="search-btn"src="images/search10.png"></a>
+        </div>
         <!--フッター-->
         <footer class="footer-aida">
             <div class="footer-pink">
@@ -60,6 +72,9 @@
                 <p class="footer-moji2">©︎irohani.All Rights Reserved.</p>
             </div>
         </footer>
+        
+            
+       
 
 
         <!--メニューバー-->
@@ -77,5 +92,6 @@
                 $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
             });
         </script>
+
     </body>
 </html>
